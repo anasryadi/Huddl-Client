@@ -1,18 +1,24 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Links = () => {
   return (
     <div>
-        <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/about'>About</Link>
-        </nav>
-        <div className='CenterLinks'>
-        <Link to='/friends'>Plans With Friends</Link>
+      <nav>
+        <div className="nameItem">
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
         </div>
+      </nav>
+      <div className="FriendsLink">
+        <Link to="/friends">
+          <Button color="primary">Plans With Friends</Button>
+        </Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Links
+export default Links;

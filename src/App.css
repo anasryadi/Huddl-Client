@@ -4,11 +4,30 @@
   height: 100vh;
 }
 
+nav {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.4rem;
+  background: rgb(78, 148, 148);
+  padding: 1rem 0;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.nameItem{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.FriendsLink {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
 h1 {
-  color: rgb(138, 156, 171);
+  color: rgb(69, 99, 124);
 }
 h2{
-  color: rgb(179, 213, 213);
+  color: rgb(112, 134, 193);
 }
 
 .suggest {
