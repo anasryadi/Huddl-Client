@@ -4,6 +4,7 @@ import About from './Components/About';
 import Friends from './Components/Friends';
 import Home from './Components/Home';
 import Links from './Components/Links';
+import Vote from './Components/Vote';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path='/friends' element={<Friends />} />
         <Route path='/about' element={<About />} />
+        <Route path='/vote' element={<Vote />} />
       </Routes>
     </div>
   );
