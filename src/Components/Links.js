@@ -6,9 +6,11 @@ const Links = () => {
     <div>
         <nav>
         <Link to='/'>Home</Link>
-        <Link to='/friends'>Plans With Friends</Link>
         <Link to='/about'>About</Link>
         </nav>
+        <div className='CenterLinks'>
+        <Link to='/friends'>Plans With Friends</Link>
+        </div>
     </div>
   )
 }
