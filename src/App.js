@@ -9,6 +9,7 @@ import Vote from './Components/Vote';
 function App() {
   return (
     <div className="App">
+      
       <Links />
 
       <Routes>

@@ -11,6 +11,7 @@ function Friends(props) {
       <input type="restaurant" placeholder="Suggest a restaurant" />
       <h2>Movie</h2>
       <input type="movie" placeholder="Suggest a movie" />
+      <br />
       <Link to="/vote">
         <input
           className="suggest"
