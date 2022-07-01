@@ -1,7 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from 'react'
 
-function Friends(props) {
+const Friends = () => {
+
+const [activity, setActivity] = useState('')
+const [restaurant, setRestaurant] = useState('')
+const [movie, setMovie] = useState('')
+const [uploadData, setUploadData] = useState({})
+const [toggleAlertContent, setAlertContent] = useState(false)
+
+// function to handle the submit button event
+const handleSubForm = (e) =>{
+
+  console.log(e.target.form.id)
+
+  setUploadData({
+    Activity: activity,
+    Restaurant: restaurant,
+    Movie: movie
+  })
+  console.log(uploadData)
+
+  toggleConfirmContent()
+}
+
+const toggleConfirmContent = () =>{
+  setAlertContent(true)
+}
+
   return (
     <div>
       <h1>Plan With Friends</h1>
@@ -15,7 +42,7 @@ function Friends(props) {
       <Link to="/vote">
         <input
           className="suggest"
-          onClick={props.submit}
+          onClick={handleSubForm}
           type="submit"
           value="Submit"
         />
