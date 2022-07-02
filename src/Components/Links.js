@@ -12,10 +12,24 @@ const Links = () => {
           <Link to="/about">About</Link>
         </div>
       </nav>
-      <div className="FriendsLink">
+      <div className="BlueButton">
+        <div className="down">
         <Link to="/friends">
           <Button color="primary">Plans With Friends</Button>
         </Link>
+        </div>
+        <br />
+        <div className="down">
+        <Link to="/date">
+          <Button color="primary">Plans On A Date</Button>
+        </Link>
+        </div>
+        <br />
+        <div className="down">
+        <Link to="/trip">
+          <Button color="primary">Plans While On A Trip</Button>
+        </Link>
+        </div>
       </div>
     </div>
   );

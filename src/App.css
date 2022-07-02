@@ -18,14 +18,19 @@ nav {
   justify-content: space-evenly;
 }
 
-.FriendsLink {
+.BlueButton {
   margin-top: 5rem;
   margin-bottom: 1rem;
+}
+
+.down {
+  margin-bottom: 1px;
 }
 
 h1 {
   color: rgb(69, 99, 124);
 }
+
 h2{
   color: rgb(112, 134, 193);
 }
