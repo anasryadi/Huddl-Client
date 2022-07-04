@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useRef, useTransition } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import apiUrl from "../apiURL";
@@ -59,11 +59,24 @@ const Friends = () => {
     setMovie(event.target.value);
   }
 
+  let transition = useTransition();
+  let isAdding =
+    transition.state === "submitting" &&
+    transition.submission.formData.get("_action") === "create";
+
+  const formRef = useRef();
+
+  useEffect(() => {
+    if (!isAdding) {
+      formRef.current?.reset();
+    }
+  }, [isAdding]);
+
   return (
     <div>
       <h1>Plan With Friends</h1>
       <h2>Suggest An Activity</h2>
-      <form onSubmit={handleSubForm}>
+      <form ref={formRef} onSubmit={handleSubForm}>
         <input
           value={activity}
           type="activity"
@@ -86,11 +99,9 @@ const Friends = () => {
         />
         <br />
         {/* <Link to="/vote"> */}
-        <input
-          className="suggest"
-          type="submit"
-          value="Add Suggestions"
-        />
+        {/* onClick={() => {navigate("/vote")}} */}
+        {/* <input className="suggest" type="submit" value="Add Suggestions" /> */}
+        <button className="suggest" type="submit">Add Suggestions</button>
         {/* </Link> */}
       </form>
     </div>
