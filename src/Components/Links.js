@@ -14,21 +14,27 @@ const Links = () => {
       </nav>
       <div className="BlueButton">
         <div className="down">
-        <Link to="/friends">
-          <Button color="primary">Plans With Friends</Button>
-        </Link>
+          <Link to="/friends">
+            <Button color="primary">Plans With Friends</Button>
+          </Link>
         </div>
         <br />
         <div className="down">
-        <Link to="/date">
-          <Button color="primary">Plans On A Date</Button>
-        </Link>
+          <Link to="/date">
+            <Button color="primary">Plans On A Date</Button>
+          </Link>
         </div>
         <br />
         <div className="down">
-        <Link to="/trip">
-          <Button color="primary">Plans While On A Trip</Button>
-        </Link>
+          <Link to="/trip">
+            <Button color="primary">Plans While On A Trip</Button>
+          </Link>
+        </div>
+        <br />
+        <div className="down">
+          <Link to="/vote">
+            <Button color="primary">Polls</Button>
+          </Link>
         </div>
       </div>
     </div>
