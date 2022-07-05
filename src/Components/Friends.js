@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useTransition } from "react";
+import React, { useCallback, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import apiUrl from "../apiURL";
@@ -26,6 +26,9 @@ const Friends = () => {
         setAlertContent(false);
       })
       .catch(() => console.log("error"));
+      setActivity("")
+      setRestaurant("")
+      setMovie("")
   }, []);
 
   // function to handle the submit button event
@@ -59,24 +62,20 @@ const Friends = () => {
     setMovie(event.target.value);
   }
 
-  let transition = useTransition();
-  let isAdding =
-    transition.state === "submitting" &&
-    transition.submission.formData.get("_action") === "create";
+//    // effect runs when user state is updated
+//    useEffect(() => {
+//     // reset form with user data
+//     searchHandlerActivity.reset();
+//     searchHandlerRestaurant.reset();
+//     searchHandlerMovie.reset();
+// }, []);
 
-  const formRef = useRef();
-
-  useEffect(() => {
-    if (!isAdding) {
-      formRef.current?.reset();
-    }
-  }, [isAdding]);
 
   return (
     <div>
       <h1>Plan With Friends</h1>
       <h2>Suggest An Activity</h2>
-      <form ref={formRef} onSubmit={handleSubForm}>
+      <form onSubmit={handleSubForm}>
         <input
           value={activity}
           type="activity"
@@ -101,7 +100,7 @@ const Friends = () => {
         {/* <Link to="/vote"> */}
         {/* onClick={() => {navigate("/vote")}} */}
         {/* <input className="suggest" type="submit" value="Add Suggestions" /> */}
-        <button className="suggest" type="submit">Add Suggestions</button>
+        <button className="suggest" type="submit">Suggestions</button>
         {/* </Link> */}
       </form>
     </div>
