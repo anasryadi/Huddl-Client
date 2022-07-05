@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import apiUrl from "../apiURL";
+import ListItem from "./ListItem";
 
 const Vote = () => {
   const [voteData, setVoteData] = useState(null);
@@ -18,17 +19,20 @@ const Vote = () => {
     votesMap = voteData.map((voteItem) => {
       console.log(voteItem);
       return (
-        <li>
-          <h3>
-            {voteItem.Activity} {count}
-          </h3>
-          <button
-            className="vote"
-            onClick={() => setCount(count + 1)}
-          >
-            Vote
-          </button>
-        </li>
+        <ListItem activity={voteItem.Activity} />
+        // <li>
+        //   <h3>
+        //     {voteItem.Activity} 
+        //     {count}
+        //     {ListItem}
+        //   </h3>
+        //   <button
+        //     className="vote"
+        //     onClick={() => setCount(count + 1)}
+        //   >
+        //     Vote
+        //   </button>
+        // </li>
       );
     });
   }
