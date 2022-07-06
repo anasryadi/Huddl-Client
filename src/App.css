@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(244, 221, 190);
-  height: 100vh;
+  height: 200vh;
 }
 
 nav {
@@ -33,6 +33,10 @@ h1 {
 
 h2{
   color: rgb(112, 134, 193);
+}
+
+li{
+  list-style: none;
 }
 
 .suggest {
