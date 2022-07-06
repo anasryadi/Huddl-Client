@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Huddl-Client/static/css/main.229a4cb3.css",
-    "main.js": "/Huddl-Client/static/js/main.2fed9608.js",
+    "main.js": "/Huddl-Client/static/js/main.a0715443.js",
     "static/js/787.8c0fd334.chunk.js": "/Huddl-Client/static/js/787.8c0fd334.chunk.js",
     "static/media/Swinging.jpeg": "/Huddl-Client/static/media/Swinging.10d24a5c906dc2b9cbad.jpeg",
     "index.html": "/Huddl-Client/index.html",
     "main.229a4cb3.css.map": "/Huddl-Client/static/css/main.229a4cb3.css.map",
-    "main.2fed9608.js.map": "/Huddl-Client/static/js/main.2fed9608.js.map",
+    "main.a0715443.js.map": "/Huddl-Client/static/js/main.a0715443.js.map",
     "787.8c0fd334.chunk.js.map": "/Huddl-Client/static/js/787.8c0fd334.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.229a4cb3.css",
-    "static/js/main.2fed9608.js"
+    "static/js/main.a0715443.js"
   ]
 }
