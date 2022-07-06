@@ -65,7 +65,9 @@ const Friends = () => {
 
   return (
     <div>
+      <br />
       <h1>Plan With Friends</h1>
+      <br />
       <h2>Suggest An Activity</h2>
       <form onSubmit={handleSubForm}>
         <input

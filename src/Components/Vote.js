@@ -49,7 +49,9 @@ const Vote = () => {
 
   return (
     <div>
+      <br />
       <h1>Vote for your favorite suggestion(s)</h1>
+      <br />
       <h2>Activities</h2>
       <ul>{votesMap}</ul>
       <h2>Restaurants</h2>

@@ -18,6 +18,10 @@ const About = () => {
         quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
         voluptas nulla pariatur
       </p>
+      <br />
+      <h2>Contact Me</h2>
+      <h2><a href="https://github.com/anasryadi/" target="_blank" rel="noopener noreferrer">Github</a></h2>
+      <h2><a href="https://www.linkedin.com/in/anas-ryadi/" target="_blank" rel="noopener noreferrer">Linkedin</a></h2>
     </div>
   );
 };

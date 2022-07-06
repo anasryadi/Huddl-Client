@@ -39,6 +39,10 @@ h2{
   color: rgb(112, 134, 193);
 }
 
+h2 a{
+  color:black;
+}
+
 li{
   list-style: none;
 }
