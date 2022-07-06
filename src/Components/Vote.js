@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import apiUrl from "../apiURL";
 import ListItem from "./ListItem";
+import ListItemMovie from "./ListItemMovie";
+import ListItemRestaurant from "./ListItemRes";
 
 const Vote = () => {
   const [voteData, setVoteData] = useState(null);
-  const [count, setCount] = useState(0);
 
   useEffect(() => {
     fetch(`${apiUrl}/friends`)
@@ -20,19 +21,6 @@ const Vote = () => {
       console.log(voteItem);
       return (
         <ListItem activity={voteItem.Activity} />
-        // <li>
-        //   <h3>
-        //     {voteItem.Activity} 
-        //     {count}
-        //     {ListItem}
-        //   </h3>
-        //   <button
-        //     className="vote"
-        //     onClick={() => setCount(count + 1)}
-        //   >
-        //     Vote
-        //   </button>
-        // </li>
       );
     });
   }
@@ -43,9 +31,7 @@ const Vote = () => {
     votesMapActivity = voteData.map((voteItem) => {
       console.log(voteItem);
       return (
-        <li>
-          <h3>{voteItem.Restaurant}</h3>
-        </li>
+        <ListItemRestaurant restaurant={voteItem.Restaurant} />
       );
     });
   }
@@ -56,9 +42,7 @@ const Vote = () => {
     votesMapMovies = voteData.map((voteItem) => {
       console.log(voteItem);
       return (
-        <li>
-          <h3>{voteItem.Movie}</h3>
-        </li>
+        <ListItemMovie movie={voteItem.Movie} />
       );
     });
   }

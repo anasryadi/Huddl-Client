@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
-const ListItem = (props) => {
+const ListItemRestaurant = (props) => {
   const [count, setCount] = useState(0);
-
   return (
     <li>
       <h3>
-        {props.activity}
+        {props.restaurant}
       </h3>
       <p>Number of votes : {count}</p>
       <button className="vote" onClick={() => setCount(count + 1)}>
@@ -16,4 +15,4 @@ const ListItem = (props) => {
   );
 };
 
-export default ListItem;
+export default ListItemRestaurant;
