@@ -1,8 +1,12 @@
 import React from 'react'
+import { CardImg } from 'reactstrap'
+import Swinging from "../Images/Swinging.jpeg"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <CardImg src={Swinging} alt="Swinging" />
+    </div>
   )
 }
 
