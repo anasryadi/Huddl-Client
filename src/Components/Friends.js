@@ -62,14 +62,6 @@ const Friends = () => {
     setMovie(event.target.value);
   }
 
-//    // effect runs when user state is updated
-//    useEffect(() => {
-//     // reset form with user data
-//     searchHandlerActivity.reset();
-//     searchHandlerRestaurant.reset();
-//     searchHandlerMovie.reset();
-// }, []);
-
 
   return (
     <div>

@@ -1,7 +1,7 @@
 let apiUrl
 
 const apiUrls = {
-    production: 'https://huddl-api.herokuapp.com/',
+    production: 'https://huddl-api.herokuapp.com',
     development: 'http://localhost:8080'
 }
 
