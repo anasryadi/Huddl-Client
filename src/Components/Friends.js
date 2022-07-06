@@ -68,7 +68,7 @@ const Friends = () => {
       <br />
       <h1>Plan With Friends</h1>
       <br />
-      <h2>Suggest An Activity</h2>
+      <h2>Suggest an Activity</h2>
       <form onSubmit={handleSubForm}>
         <input
           value={activity}
@@ -76,14 +76,14 @@ const Friends = () => {
           placeholder="Suggest an activity"
           onChange={searchHandlerActivity}
         />
-        <h2>Suggest A Restaurant</h2>
+        <h2>Suggest a Restaurant</h2>
         <input
           value={restaurant}
           type="restaurant"
           placeholder="Suggest a restaurant"
           onChange={searchHandlerRestaurant}
         />
-        <h2>Suggest A Movie</h2>
+        <h2>Suggest a Movie</h2>
         <input
           value={movie}
           type="movie"
