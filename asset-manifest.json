@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Huddl-Client/static/css/main.08f51f73.css",
+    "main.js": "/Huddl-Client/static/js/main.5c97b02f.js",
+    "static/js/787.8c0fd334.chunk.js": "/Huddl-Client/static/js/787.8c0fd334.chunk.js",
+    "index.html": "/Huddl-Client/index.html",
+    "main.08f51f73.css.map": "/Huddl-Client/static/css/main.08f51f73.css.map",
+    "main.5c97b02f.js.map": "/Huddl-Client/static/js/main.5c97b02f.js.map",
+    "787.8c0fd334.chunk.js.map": "/Huddl-Client/static/js/787.8c0fd334.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08f51f73.css",
+    "static/js/main.5c97b02f.js"
+  ]
+}
