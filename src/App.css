@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: rgb(244, 221, 190);
-  height: 200vh;
+  min-height: 100vh;
 }
 
 nav {
@@ -16,6 +16,10 @@ nav {
 .nameItem{
   display: flex;
   justify-content: space-evenly;
+}
+
+.nameItem a{
+  color: black;
 }
 
 .BlueButton {

@@ -49,7 +49,7 @@ const Vote = () => {
 
   return (
     <div>
-      <h1>Vote !</h1>
+      <h1>Vote for your favorite suggestion(s)</h1>
       <h2>Activities</h2>
       <ul>{votesMap}</ul>
       <h2>Restaurants</h2>
