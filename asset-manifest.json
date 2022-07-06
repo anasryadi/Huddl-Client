@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Huddl-Client/static/css/main.08f51f73.css",
-    "main.js": "/Huddl-Client/static/js/main.29e6955b.js",
+    "main.css": "/Huddl-Client/static/css/main.8ae6b972.css",
+    "main.js": "/Huddl-Client/static/js/main.54f04741.js",
     "static/js/787.8c0fd334.chunk.js": "/Huddl-Client/static/js/787.8c0fd334.chunk.js",
+    "static/media/Swinging.jpeg": "/Huddl-Client/static/media/Swinging.10d24a5c906dc2b9cbad.jpeg",
     "index.html": "/Huddl-Client/index.html",
-    "main.08f51f73.css.map": "/Huddl-Client/static/css/main.08f51f73.css.map",
-    "main.29e6955b.js.map": "/Huddl-Client/static/js/main.29e6955b.js.map",
+    "main.8ae6b972.css.map": "/Huddl-Client/static/css/main.8ae6b972.css.map",
+    "main.54f04741.js.map": "/Huddl-Client/static/js/main.54f04741.js.map",
     "787.8c0fd334.chunk.js.map": "/Huddl-Client/static/js/787.8c0fd334.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08f51f73.css",
-    "static/js/main.29e6955b.js"
+    "static/css/main.8ae6b972.css",
+    "static/js/main.54f04741.js"
   ]
 }
